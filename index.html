@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>tinDog</title>
 
-  <!-- FontAwesome -->
+  <!-- FontAwesome CDN. This is where I got the Google play logo, apple logo, amongst others. -->
   <script src="https://kit.fontawesome.com/f84569441e.js" crossorigin="anonymous"></script>
 
   <!-- styles(bootstrap,google fonts, me) -->
@@ -20,14 +20,14 @@
 
   <section id="title">
 
-    <!-- Navbar -->
+    <!-- Bootstrap Navbar. Hamburger menu begins with "navbar-toggler" button class -->
 
     <div class="container-fluid">
 
       <nav class="navbar navbar-expand-lg  navbar-dark">
 
         <a class="navbar-brand" href="">tindog</a>
-
+<!--Hamburger begins -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,10 +35,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <!-- FYI you dont have the contact page yet -->
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#pricing">Price</a>
             </li>
@@ -49,7 +46,9 @@
         </div>
       </nav>
 
+<!-- Hamburger/navBar ends -->
 
+<!--Begin responsive design 2 to 1 columns -->
 
       <!-- Title -->
       <div class="row">
@@ -67,6 +66,7 @@
       </div>
 
     </div>
+    <!--- End 2 to 1 responsive -->
   </section>
 
 
@@ -74,7 +74,7 @@
 
   <section id="features">
 
-
+<!-- Begin 3 to 1 responsive design -->
 
     <!-- Feature text -->
     <div class="row text-center">
@@ -99,9 +99,9 @@
       </div>
     </div>
   </section>
+<!-- End 3 to 1 responsive design -->
 
-
-  <!-- Testimonials -->
+  <!-- Testimonials include three image slides, always block-level -->
 
   <section id="testimonials">
 
@@ -140,7 +140,7 @@
   </section>
 
 
-  <!-- Press -->
+  <!-- Press subFooter section -->
 
   <section id="press">
     <img class="pressImg" src="techcrunch.png" alt="tc-logo">
@@ -149,15 +149,22 @@
     <img class="pressImg" src="mashable.png" alt="mashable-logo">
 
   </section>
+<!--- end Press section -->
 
 
-  <!-- Pricing -->
+
+
+
+
+
+
+  <!-- Bootstrap pricing template + myCSS --> -->
 
   <section id="pricing">
 
     <h2>A Plan for Every Dog's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
-
+<!-- Two Query responsive design, 3 to 2 to 1 for second and third-tier pricing -->
     <div class="row">
       <div class=" pricing-column col-lg-4 col-md-6">
         <div class='card'>
@@ -188,7 +195,7 @@
           </div>
         </div>
       </div>
-      <!--- full page responsive for highest tier -->
+      <!--- full page responsive for highest tier, will become block level from LG to SM size -->
       <div class=' pricing-column col-md-12 col-lg-4'>
         <div class='card'>
           <div class='card-header'>
@@ -208,9 +215,13 @@
     </div>
 
   </section>
+<!-- End pricing section -->
 
 
-  <!-- Call to Action -->
+
+
+
+  <!-- Call to Action, using FA cdn -->
 
   <section id="cta">
 
@@ -221,7 +232,7 @@
   </section>
 
 
-  <!-- Footer -->
+  <!-- Footer, with more FontAwesome -->
 
   <footer id="footer">
     <!-- Mobile Icons -->
@@ -236,7 +247,7 @@
     <p class="footer-text">© Copyright 2020 TinDog/Chris Cutting</p>
 
   </footer>
-  <!--Bootstrap Scripts -->
+  <!--Bootstrap Scripts, need to be at the bottom to run AFTER the CSS CDN loads -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

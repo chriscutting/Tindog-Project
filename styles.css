@@ -1,12 +1,16 @@
+
+/* CSS incorporates GoogleFonts for "monsterrat" style */
+
 body {
   font-family: "Montserrat", sans-serif;
 }
 
-/* title stuff */
+/* Apply proper background color, font size/weight/style to page */
 
 #title {
   background-color: #ff4c68;
   color: #fff;
+
 
 }
 
@@ -30,6 +34,11 @@ h2 {
   line-height: 1.5;
 }
 
+
+/* Fontawesome(.fa-class) requires both the CDN, scripts to work.
+Afterwards, you can edit their size/color using CSS */
+
+
 .fa-apple {
   margin-right: 5px;
 }
@@ -38,7 +47,7 @@ h2 {
   margin-right: 5px;
 }
 
-/* navbar stuff */
+/* navbar spacing and fonts */
 
 .navbar.navbar-expand-lg.navbar-dark {
   padding: 0 0 4.5rem;
@@ -70,7 +79,7 @@ h2 {
 
 
 
-/* photo */
+/* cellphone photo using IMGrotate and positioning */
 
 .cellDog {
 width: 60%;
@@ -86,7 +95,7 @@ position: absolute;
   padding: 3% 15% 7%;
 }
 
-/* Features! */
+/* Features, and the wonderful z-index. */
 
 
 #features {
@@ -96,14 +105,15 @@ z-index: 1;
 
 }
 
-
+/*incorporate proper spacing between font-awesome "features"*/
 .fa-check-circle, .fa-bullseye, .fa-heart {
   color: #ef8172;
   padding: 0 auto;
-  margin-top: 200px;
+  margin-top: 100px;
 
 }
 
+/*Hover pseudo-effects */
 .fa-check-circle:hover, .fa-bullseye:hover, .fa-heart:hover {
   color : #ff4c68;
 }
@@ -126,7 +136,8 @@ z-index: 1;
 }
 
 
-/* Testimonials */
+/* IMG carousel CSS, moved the arrows to the sides of the page, and made the spacing more attractive
+FYI: I chose to deviate on the color for this section just because the rest of the site is already pretttttty pink, so I chose a softer one */
 
 #testimonials {
 
@@ -146,7 +157,7 @@ z-index: 1;
     padding: 7% 15%;
 }
 
-/* Press */
+/* Press Section */
 #press {
   background-color: #ef8172;
   text-align: center;
@@ -158,7 +169,7 @@ z-index: 1;
   width: 15%;
   margin: 20px 20px 50px;
 }
- /* pricing */
+ /* This is my own CSS on top of using the Bootstrap example for a pricing section */
 #pricing {
   padding: 100px;
   text-align: center;
@@ -168,7 +179,8 @@ z-index: 1;
   padding: 3% 2%;
 }
 
-/* Responsive title for Mobile */
+/*Normally, Bootstrap grid system will do your media queries for you:
+I still have to rotate the cell-dog Image when the page goes under full-screen*/
 
 @media (max-width:1028px) {
   .cellDog {
@@ -181,7 +193,7 @@ z-index: 1;
   }
 }
 
-/* cta/footer sections  */
+/* Finish spacing for footers and CTA sections */
 
 #cta {
   font-size: 3.5rem;
