@@ -72,6 +72,17 @@ Afterwards, you can edit their size/color using CSS */
   font-weight: 200;
 }
 
+/*geolocation button */
+#find-me {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+
 /* Download Buttons */
 .download-btn {
   margin: 5% 3% 5% 0;
@@ -137,7 +148,7 @@ z-index: 1;
 
 
 /* IMG carousel CSS, moved the arrows to the sides of the page, and made the spacing more attractive
-FYI: I chose to deviate on the color for this section just because the rest of the site is already pretttttty pink, so I chose a softer one */
+FYI: I chose to deviate on the color for this section just because the rest of the site is already bright pink, so I chose a softer one */
 
 #testimonials {
 
@@ -180,7 +191,8 @@ FYI: I chose to deviate on the color for this section just because the rest of t
 }
 
 /*Normally, Bootstrap grid system will do your media queries for you:
-I still have to rotate the cell-dog Image when the page goes under full-screen*/
+I still have to rotate the cell-dog Image when the page goes under full-screen
+I also have to center my Geolocate button*/
 
 @media (max-width:1028px) {
   .cellDog {
@@ -191,7 +203,16 @@ I still have to rotate the cell-dog Image when the page goes under full-screen*/
   #title {
     text-align: center;
   }
+
+  #find-me {
+    margin: auto;
+    padding: auto;
+  }
+
+  /*end media query */
 }
+
+
 
 /* Finish spacing for footers and CTA sections */
 
