@@ -2,8 +2,12 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
   <title>tinDog</title>
+
+<!-- Add Geolocation API -->
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
 
   <!-- FontAwesome CDN. This is where I got the Google play logo, apple logo, amongst others. -->
   <script src="https://kit.fontawesome.com/f84569441e.js" crossorigin="anonymous"></script>
@@ -27,7 +31,9 @@
       <nav class="navbar navbar-expand-lg  navbar-dark">
 
         <a class="navbar-brand" href="">tindog</a>
+
 <!--Hamburger begins -->
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -43,7 +49,7 @@
               <a class="nav-link" href="#download">Download</a>
             </li>
             <li class="nav-item">
-              <button  class="nav-link" id="find-me">Show my location</button>
+              <button  class="nav-link" id="find-me">Show My Location</button>
               <span id="status"></span>
               <a id="map-link" target="_blank"></a>
             </li>
@@ -70,7 +76,7 @@
         </div>
       </div>
 
-    </div>
+</div>
     <!--- End 2 to 1 responsive -->
   </section>
 
@@ -252,11 +258,16 @@
     <p class="footer-text">© Copyright 2020 TinDog/Chris Cutting</p>
 
   </footer>
-  <!--Bootstrap Scripts, need to be at the bottom to run AFTER the CSS CDN loads -->
+
+  <!--jQuery/Bootstrap Scripts, need to be at the bottom to run AFTER the CSS CDN loads -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+<!---Geolocation script -->
+<script type="text/javascript" src="app.js"></script>
+
+</script>
 
 </body>
 
