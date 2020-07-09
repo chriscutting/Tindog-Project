@@ -7,7 +7,7 @@ function geoFindMe() {
   const mapLink = document.querySelector('#map-link');
 //Set mapLink as blank string
   mapLink.href = "";
-  mapLink.textContent = '';
+  mapLink.textContent = "";
 //execute on successful/consented IP lookup
   function success(position) {
 //Get lat/lng from inherent API
@@ -17,7 +17,7 @@ function geoFindMe() {
 //String lat/lng through ANOTHER api to get city data
     mapLink.href = "https://api.bigdatacloud.net/data/reverse-geocode-client?latitude="+latitude+"&longitude="+longitude+"&localityLanguage=en";
     const url = "https://api.bigdatacloud.net/data/reverse-geocode-client?latitude="+latitude+"&longitude="+longitude+"&localityLanguage=en";
-//once you have lat/lng defined, you can send another request to the second API parsing the city data
+//Once you have lat/lng defined, you can send another request to the second API parsing the city data
     var request = new XMLHttpRequest()
 
 // Open a new connection, using the GET request on the URL endpoint const
